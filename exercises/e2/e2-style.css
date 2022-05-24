@@ -1,12 +1,172 @@
-.grid {
-	border: 1px solid black;
-	display: grid;
-	width: 250px;
-	height: 250px;
-	grid-template-columns: 50px 50px 50px 50px 50px;
-	grid-template-rows: 50px 50px 50px 50px 50px;
+/* general styling */
+body {
+	background-color: #bad7f2;
+	font-family: "Courier New", Courier, monospace;
 }
 
-.grid-item {
+h1 {
+	text-align: center;
+}
+
+button {
+	background-color: #f2bac9;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	font-family: "Courier New", Courier, monospace;
+}
+
+img {
+	width: 100px;
+	padding-top: 70px;
+}
+
+/* styling for gallery div containing all flags */
+#gallery {
+	margin: auto;
+	width: 75%;
+	height: 50%;
+	padding: 5% 0 5% 0;
+	background-color: #ffdcb3;
+	border-radius: 10px;
+	border: 8px solid #f2bac9;
+	border-top: 40px solid #f2bac9;
+}
+
+/* styling for flag of sweden */
+#sweden {
 	border: 1px solid black;
+	display: grid;
+	width: 410px;
+	height: 240px;
+	grid-template-columns: 50px 70px 40px 50px 50px 50px 50px 50px;
+	grid-template-rows: 50px 50px 40px 50px 50px 50px 50px 50px 50px;
+	margin: auto;
+}
+
+.sweden-grid-item {
+	background-color: #006aa7;
+}
+
+.sweden-stripe {
+	background-color: #fecc02;
+}
+
+/* styling for flag of finland */
+#finland {
+	border: 1px solid black;
+	/* display: grid; */
+	display: none;
+	width: 350px;
+	height: 250px;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px 50px 50px;
+	margin: auto;
+}
+
+.finland-grid-item {
+	background-color: white;
+}
+
+.finland-stripe {
+	background-color: #002f6c;
+}
+
+/* styling for flag of Denmark */
+#denmark {
+	border: 1px solid black;
+	/* display: grid; */
+	display: none;
+	width: 280px;
+	height: 230px;
+	grid-template-columns: 50px 50px 30px 50px 50px 50px;
+	grid-template-rows: 50px 50px 30px 50px 50px;
+	margin: auto;
+}
+
+.denmark-grid-item {
+	background-color: #c60c30;
+}
+
+.denmark-stripe {
+	background-color: white;
+}
+
+/* styling for flag of Iceland */
+#iceland {
+	border: 1px solid black;
+	/* display: grid; */
+	display: none;
+	width: 280px;
+	height: 200px;
+	grid-template-columns: 80px 10px 20px 10px 80px 80px;
+	grid-template-rows: 80px 10px 20px 10px 80px;
+	margin: auto;
+}
+
+.iceland-grid-item {
+	background-color: #02529c;
+}
+
+.iceland-stripe-outer {
+	background-color: white;
+}
+
+.iceland-stripe-inner {
+	background-color: #dc1e35;
+}
+
+/* styliing for flag of France */
+#france {
+	border: 1px solid black;
+	/* display: grid; */
+	display: none;
+	width: 300px;
+	height: 200px;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 200px;
+	margin: auto;
+}
+
+.france-stripe-left {
+	background-color: blue;
+}
+
+.france-stripe-middle {
+	background-color: white;
+}
+
+.france-stripe-right {
+	background-color: #dc1e35;
+}
+
+/* styling for my own made up flag */
+#mandy {
+	border: 1px solid black;
+	/* display: grid; */
+	display: none;
+	width: 410px;
+	height: 240px;
+	grid-template-columns: 50px 50px 50px 50px 50px 50px 100px 10px;
+	grid-template-rows: 20px 20px 160px 20px 20px;
+	margin: auto;
+}
+
+.mandy-grid-item {
+	background-image: linear-gradient(#31418b, #1b2458);
+}
+
+.mandy-stripe {
+	background-color: #8a96db;
+}
+
+/* styling for the navigation buttons */
+#back-button {
+	float: left;
+	margin-left: 12%;
+}
+
+#next-button {
+	float: right;
+	margin-right: 12%;
 }

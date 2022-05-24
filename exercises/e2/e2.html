@@ -1,47 +1,271 @@
+<!-- Mandy Luu (3184830) 
+		 GDES-3091 Exercise 2 -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="e2-style.css" />
-		<title> CSS Flags</title>
+		<title> Exercise 2 </title>
 	</head>
 	<body>
-		<h1> CSS Grid</h1>
-		<div class="grid">
-			<!--row-->
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
+		<h1> CSS Flags</h1>
+		<div id="gallery">
+			<!-- h1 header to dynamically display which flag is being shown while user clicks through gallery -->
+			<h1 id="flag_name"> </h1>
+			<!-- div container for Sweden flag components -->
+			<div id="sweden">
+				<!-- row 1-->
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
 
-			<!--row-->
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
+				<!-- row 2 -->
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
 
-			<!--row-->
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
+				<!-- row 3 -->
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-stripe"></div>
 
-			<!--row-->
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
+				<!-- row 4 -->
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
 
-			<!--row-->
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
-			<div class="grid-item"></div>
+				<!-- row 5 -->
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-stripe"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+				<div class="sweden-grid-item"></div>
+			</div>
+
+			<!-- div container for Finland flag components -->
+			<div id="finland">
+				<!-- row 1 -->
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+
+				<!-- row 2 -->
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+
+				<!-- row 3 -->
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-stripe"></div>
+
+				<!-- row 4 -->
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+
+				<!-- row 5 -->
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-stripe"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+				<div class="finland-grid-item"></div>
+			</div>
+
+			<!-- div container for Denmark flag components -->
+			<div id="denmark">
+				<!-- row 1 -->
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+
+				<!-- row 1 -->
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+
+				<!-- row 1 -->
+				<div class="denmark-stripe"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-stripe"></div>
+
+				<!-- row 1 -->
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+
+				<!-- row 1 -->
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-stripe"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+				<div class="denmark-grid-item"></div>
+			</div>
+
+			<!-- div container for Iceland flag components -->
+			<div id="iceland">
+				<!-- row 1 -->
+				<div class="iceland-grid-item"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-grid-item"></div>
+				<div class="iceland-grid-item"></div>
+
+				<!-- row 2 -->
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+
+				<!-- row 3 -->
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-inner"></div>
+
+				<!-- row 4 -->
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-outer"></div>
+
+				<!-- row 5 -->
+				<div class="iceland-grid-item"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-stripe-inner"></div>
+				<div class="iceland-stripe-outer"></div>
+				<div class="iceland-grid-item"></div>
+				<div class="iceland-grid-item"></div>
+			</div>
+
+			<!-- div container for the 5th flag (an existing flag)-->
+			<div id="france">
+				<!-- row 1 -->
+				<div class="france-stripe-left"></div>
+				<div class="france-stripe-middle"></div>
+				<div class="france-stripe-right"></div>
+			</div>
+
+			<!-- div container for the 5th flag (original) -->
+			<div id="mandy">
+				<!-- row 1 -->
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+
+				<!-- row 2 -->
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+
+				<!-- row 3 -->
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item">
+					<img src="Rose.png" />
+				</div>
+				<div class="mandy-grid-item"></div>
+
+				<!-- row 4 -->
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-stripe"></div>
+
+				<!-- row 5 -->
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-stripe"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+				<div class="mandy-grid-item"></div>
+			</div>
 		</div>
-		<script src=""></script>
+		<br />
+		<!-- button to toggle gallery backwards -->
+		<button id="back-button" onclick="goBack()"> Previous Flag </button>
+		<!-- button to toggle gallery forwards -->
+		<button id="next-button" onclick="goForward()"> Next Flag </button>
+		<script src="e2.js"></script>
 	</body>
 </html>
