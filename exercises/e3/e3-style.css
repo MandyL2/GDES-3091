@@ -1,0 +1,181 @@
+@font-face {
+	font-family: "mandy_testregular";
+	src: url("mandyhandwriting-webfont.woff2") format("woff2"),
+		url("mandyhandwriting-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #1d1346;
+	text-align: center;
+	font-family: "Share Tech Mono", monospace;
+}
+
+span {
+	display: inline-block;
+}
+
+li {
+	padding: 5px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: repeat(4, 25%);
+	margin: auto;
+}
+
+.text-sidebar {
+	text-align: left;
+}
+
+.content {
+	margin: auto;
+	grid-column-start: 2;
+}
+
+#header {
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	width: 80%;
+}
+
+#sidebar {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: span 4;
+	margin: auto;
+	height: 80%;
+	padding: 4px;
+}
+
+#header,
+#sidebar {
+	background-color: white;
+	border: 6px solid #b1c6f6;
+	border-radius: 5px;
+	border-top: 25px solid #b1c6f6;
+	margin: auto;
+}
+
+/* keyframes for slide animation */
+@keyframes slide-in {
+	from {
+		transform: translateX(-10px);
+	}
+	to {
+		transform: translateX(60px);
+	}
+}
+
+/* keyframes for bounce animation */
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	70% {
+		transform: translateY(-2px);
+	}
+	90% {
+		transform: translateY(8px);
+	}
+	100% {
+		transform: translateY(2px);
+	}
+}
+
+/* keyframes for fall animation */
+@keyframes fall {
+	0%,
+	50% {
+		transform: translateY(0px) rotate(0deg);
+		opacity: 100;
+	}
+	100% {
+		transform: translateY(50px) rotate(200deg);
+		opacity: 0;
+	}
+}
+
+#slide-div,
+#bounce,
+#fall {
+	background-color: white;
+	border: 8px solid #ffdcb3;
+	border-radius: 2px;
+	border-top: 25px solid #ffdcb3;
+	padding: 10px 70px 15px 70px;
+	width: 120px;
+	height: 80%;
+}
+
+#slide {
+	font-family: chantal, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+#slide:hover {
+	animation: slide-in 1s infinite ease-out;
+}
+
+#bounce {
+	font-family: "Concert One", cursive;
+	/* variable containing default value for animation delay between each letter of the word "bounce" */
+	--bounceDelay: 50ms;
+}
+
+#fall {
+	font-family: "mandy_testregular", monospace;
+	font-size: 30px;
+}
+
+/* animating with css :hover. Uncomment this entire section and the for loop in e3.js, then comment out
+all the code indicated in e3.js to see it work */
+/* #bounce:hover span:nth-child(1) {
+	animation: bounce 1s infinite;
+}
+
+#bounce:hover span:nth-child(2) {
+	animation: bounce 1s infinite;
+}
+
+#bounce:hover span:nth-child(3) {
+	animation: bounce 1s infinite;
+}
+
+#bounce:hover span:nth-child(4) {
+	animation: bounce 1s infinite;
+}
+
+#bounce:hover span:nth-child(5) {
+	animation: bounce 1s infinite;
+}
+
+#bounce:hover span:nth-child(6) {
+	animation: bounce 1s infinite;
+}
+
+#fall:hover span:nth-child(4) {
+	animation: fall 1.5s infinite;
+}
+
+#fall:hover span:nth-child(3) {
+	animation: fall 1.5s infinite;
+	animation-delay: 100ms;
+}
+
+#fall:hover span:nth-child(2) {
+	animation: fall 1.5s infinite;
+	animation-delay: 250ms;
+}
+
+#fall:hover span:nth-child(1) {
+	animation: fall 1.5s infinite;
+	animation-delay: 350ms;
+} */

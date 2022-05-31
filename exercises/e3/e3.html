@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- style sheet for entire page -->
+		<link rel="stylesheet" type="text/css" href="e3-style.css" charset="utf-8" />
+		<!-- Adobe Font link -->
+		<link rel="stylesheet" href="https://use.typekit.net/nnb4kqv.css" />
+		<!-- Google Font links -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<title> Exercise 3 </title>
+	</head>
+	<body>
+		<!-- div container for entire grid layout -->
+		<div class="grid">
+			<!-- div container for header component -->
+			<div id="header">
+				<h1> CSS Fonts & Animation </h1>
+			</div>
+
+			<!-- div container for references used for this exercise, keeping it here until i can organize 
+				it within my INDEX -->
+			<div id="sidebar">
+				<h2> References </h2>
+				<ul class="text-sidebar">
+					<li>
+						<a href="https://www.w3schools.com/cssref/sel_nth-child.asp" target="_blank"> :nth-child </a>
+					</li>
+					<li>
+						<a
+							href="https://bobbyhadz.com/blog/javascript-get-nth-child-of-element 
+							https://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_transform"
+							target="_blank"
+						>
+							Accessing :nth-child with Javascript
+						</a>
+					</li>
+					<li>
+						<a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="_blank">
+							Accessing a Style Object
+						</a>
+					</li>
+					<li>
+						<a href="https://www.w3schools.com/css/css3_variables_javascript.asp" target="_blank">
+							CSS variables and javascript
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://stackoverflow.com/questions/11371550/change-hover-css-properties-with-javascript"
+							target="_blank"
+						>
+							Change CSS :hover with javascript? (Suggestion from Achal Dave)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/web/api/element/mouseenter_event"
+							target="_blank"
+						>
+							mouseenter & mouseleave events
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- div container for grid element of "slide" -->
+			<div class="content">
+				<!--  div container for slide that stays static and has styling applied to it to look consistent
+				with the other verbs-->
+				<div id="slide-div">
+					<!-- p element containing the verb "slide" that slides within the div instead of having the 
+					entire div slide with the word-->
+					<p id="slide"> Slide </p>
+				</div>
+			</div>
+
+			<!-- div container for grid element of "bounce" -->
+			<div class="content">
+				<h2 id="bounce">
+					<!-- splitting up the verb "bounce" into span elements to be individually animated -->
+					<span> b </span>
+					<span> o </span>
+					<span> u </span>
+					<span> n </span>
+					<span> c </span>
+					<span> e </span>
+				</h2>
+			</div>
+
+			<!-- div container for grid element of "fall" -->
+			<div class="content">
+				<h2 id="fall">
+					<!-- splitting up the verb "fall" into span elements for individual animation -->
+					<span> F </span>
+					<span> a </span>
+					<span> l </span>
+					<span> l </span>
+				</h2>
+			</div>
+		</div>
+		<script src="e3.js"></script>
+	</body>
+</html>
