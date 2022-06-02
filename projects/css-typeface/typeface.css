@@ -1,0 +1,215 @@
+.scale-down {
+	transform: scale(1.2);
+}
+
+.spacing {
+	margin-left: -30px;
+}
+
+.alphabet {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.spacer {
+	display: inline-block;
+	width: 30px;
+}
+
+/* styling for div container of each letter */
+.letter {
+	display: inline-block;
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+/* 5x5 grid template for each letter */
+.grid {
+	display: inline-block;
+	display: grid;
+	grid-template-columns: 22.5% 20% 15% 20% 22.5%;
+	grid-template-rows: repeat(5, 20%);
+	height: 100px;
+	width: 100px;
+	position: absolute;
+}
+
+.letter-i .grid,
+.letter-t .grid {
+	grid-template-columns: repeat(5, 20%);
+}
+
+.letter-q .grid {
+	grid-template-columns: 22% 20% 15% 20% 15%;
+}
+
+.letter-y .grid {
+	grid-template-columns: 22% 18% 20% 18% 22%;
+}
+
+.grid-item-colour {
+	background-image: linear-gradient(#fad547, #ed722f);
+}
+
+.rounded-center {
+	border-radius: 2px;
+}
+
+.rounded-center,
+.rounded-top,
+.rounded-bottom,
+.rounded-top-left,
+.rounded-top-right,
+.rounded-bottom-left,
+.rounded-bottom-right,
+.rounded-right {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.rounded-top-left {
+	border-top-left-radius: 7px;
+}
+
+.rounded-top-right {
+	border-top-right-radius: 7px;
+}
+
+.rounded-bottom-left {
+	border-bottom-left-radius: 7px;
+}
+
+.rounded-bottom-right {
+	border-bottom-right-radius: 7px;
+}
+
+.rounded-top {
+	border-radius: 5px 5px 0 0;
+}
+
+.rounded-bottom {
+	border-radius: 0 0 5px 5px;
+}
+
+.rounded-right {
+	border-radius: 0 5px 5px 0;
+}
+
+.rounded-left {
+	border-radius: 5px 0 0 5px;
+}
+
+/* short for "half height", makes the div half its original height */
+.hh {
+	height: 50%;
+}
+
+/* short for "half width", makes the div half its original width */
+.hw {
+	width: 50%;
+}
+
+.letter-g .hw {
+	margin-top: -132%;
+	float: right;
+	background-image: linear-gradient(#fad547, #ed722f);
+}
+
+#m1 {
+	background-image: linear-gradient(#fad547, #ed722f);
+	height: 100%;
+	border-top-right-radius: 100%;
+	display: inline;
+	float: left;
+}
+
+#m2 {
+	margin-left: 20%;
+	margin-top: -130%;
+	background-image: linear-gradient(#fad547, #ed722f);
+	height: 100%;
+	border-top-left-radius: 100%;
+	display: inline;
+	float: right;
+}
+
+.letter-n .rounded-bottom-left {
+	border-bottom-left-radius: 100%;
+}
+
+.letter-n .rounded-top-right {
+	border-top-right-radius: 100%;
+}
+
+#q {
+	margin-top: 30%;
+}
+
+#s {
+	margin-top: 50%;
+}
+
+.letter-v .rounded-top-left.hw {
+	border-top-left-radius: 100%;
+	margin-left: 50%;
+}
+
+.letter-v .rounded-top-right {
+	border-top-right-radius: 100%;
+}
+
+.letter-v .rounded-bottom-left.hw {
+	border-bottom-left-radius: 100%;
+	margin-left: 50%;
+}
+
+.letter-v .rounded-bottom-right.hw {
+	border-bottom-right-radius: 100%;
+}
+
+#w1 {
+	background-image: linear-gradient(#fad547, #ed722f);
+	height: 100%;
+	border-bottom-right-radius: 100%;
+	display: inline;
+	float: left;
+}
+
+#w2 {
+	margin-left: 20%;
+	margin-top: -134%;
+	background-image: linear-gradient(#fad547, #ed722f);
+	height: 100%;
+	border-bottom-left-radius: 100%;
+	display: inline;
+	float: right;
+}
+
+.letter-w .hh {
+	margin-top: 70%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.letter-z .rounded-bottom-right {
+	border-bottom-right-radius: 65%;
+}
+
+.letter-z .rounded-top-left {
+	border-top-left-radius: 65%;
+}
+
+#z-right {
+	border-top-left-radius: 100;
+}
+
+#z-center {
+	border-top-left-radius: 70%;
+	border-bottom-right-radius: 70%;
+}
+
+#z-left {
+	border-bottom-right-radius: 100;
+}
