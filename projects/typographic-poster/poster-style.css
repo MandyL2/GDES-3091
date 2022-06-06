@@ -120,8 +120,7 @@ https://alvarotrigo.com/blog/css-animations-scroll/#:~:text=What%20are%20CSS%20S
 	opacity: 1;
 }
 
-#title-grid,
-#grid {
+.grid-layout {
 	display: grid;
 	grid-template-columns: 25% 50% 25%;
 	grid-template-rows: repeat(4, 25%);
@@ -242,16 +241,6 @@ https://alvarotrigo.com/blog/css-animations-scroll/#:~:text=What%20are%20CSS%20S
 	margin: auto;
 	box-shadow: 10px 10px 0 #0c1943;
 }
-/* 
-.info-box::after {
-	content: "";
-	position: absolute;
-	margin: 5px 0 0px -30px;
-	width: 10px;
-	height: 10px;
-	transform: rotate(45deg);
-	box-shadow: 0 0 0 40px #1d213e;
-} */
 
 #program {
 	text-align: center;
