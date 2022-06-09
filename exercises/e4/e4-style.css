@@ -1,0 +1,125 @@
+body {
+	background-color: beige;
+}
+
+hr {
+	width: 200px;
+	border: none;
+	border-bottom: 45px solid salmon;
+}
+
+h1,
+h2 {
+	color: cornflowerblue;
+	font-family: chantal, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	color: white;
+	grid-column-end: span 2;
+}
+
+p {
+	font-family: hey-eloise, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 28px;
+}
+
+img {
+	position: absolute;
+	width: 250px;
+}
+
+#grid {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	background-color: chocolate;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+#title {
+	margin: auto;
+	width: 30%;
+	background-color: aquamarine;
+	text-align: center;
+	grid-column-end: span 2;
+}
+
+.entry {
+	padding: 10px;
+	background-color: white;
+	width: max-content;
+	height: max-content;
+	display: inline-block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#book iframe,
+#legally-blonde iframe {
+	width: 300px;
+	height: 400px;
+	border: none;
+}
+
+#loona iframe {
+	width: 560px;
+	height: 315px;
+	border: none;
+}
+
+#echo iframe,
+#shmata iframe {
+	width: 80vw;
+	height: 50vh;
+}
+
+#echo {
+	float: right;
+}
+
+#loona,
+#echo,
+#shmata {
+	grid-column-end: span 2;
+}
+
+#yunjin-sticker {
+	top: 50%;
+}
+
+#books-sticker {
+	top: 65%;
+	left: -50%;
+}
+
+#heart-sticker {
+	width: 50%;
+	top: -15%;
+	left: -30%;
+}
+
+/* making page responsive */
+@media (max-width: 1117px) {
+	#grid {
+		display: block;
+		overflow: scroll;
+	}
+	.entry {
+		display: block;
+	}
+	#title {
+		width: 50%;
+	}
+}

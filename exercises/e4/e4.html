@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="e4-style.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/nnb4kqv.css" />
+		<title> Exercise 4 </title>
+	</head>
+	<body>
+		<!-- theme: scrapbook/journaling -->
+
+		<!-- grid container for all iframes -->
+		<div id="grid">
+			<div id="title"> <h1> May Highlights </h1> </div>
+			<h2> Click and drag to rearrange! </h2>
+
+			<!-- div container for karaoke iframe -->
+			<div id="echo" class="entry draggable">
+				<hr />
+				<iframe src="https://echokaraoke.ca/" title="Echo Karaoke Home Page"> </iframe>
+				<p> 06/12/22 Karaoke time </p>
+			</div>
+			<br />
+
+			<!-- div container for youtube iframe -->
+			<div id="loona" class="entry draggable">
+				<hr />
+				<iframe src="https://www.youtube.com/embed/9nzIFQsUGVI" title="YouTube video player"> </iframe>
+				<img
+					id="yunjin-sticker"
+					src="https://pbs.twimg.com/media/FQTLW55XoAMmQ52?format=png&name=360x360"
+				/>
+				<p> 06/12/22 ICONIC JAW DROPPING BURNED INTO MEMORY </p>
+			</div>
+
+			<!-- div container for legally blonde iframe -->
+			<div id="legally-blonde" class="entry draggable">
+				<hr />
+				<img
+					id="heart-sticker"
+					class="draggable"
+					src="https://static.vecteezy.com/system/resources/previews/001/187/445/non_2x/heart-sticker-png.png"
+				/>
+				<iframe
+					src="http://www.mainstagetheatre.com/legally-blonde.html"
+					title="Legally Blonde show info"
+				>
+				</iframe>
+				<p> 06/14/22 1st Live musical!! Amazing cast </p>
+			</div>
+
+			<!-- div container for book iframe -->
+			<div id="book" class="entry draggable">
+				<hr />
+				<img
+					id="books-sticker"
+					src="https://i.pinimg.com/originals/1b/9b/7b/1b9b7b85c5fec4715dab8600695e6450.png"
+				/>
+				<iframe
+					src="https://www.torontopubliclibrary.ca/detail.jsp?Entt=RDM3803065&R=3803065"
+					title="Toronto Public Library book details"
+				>
+				</iframe>
+				<p> 06/15/22 Love a good enemies to lovers trope </p>
+			</div>
+
+			<!-- div container for thrift store iframe -->
+			<div id="shmata" class="entry draggable">
+				<hr />
+				<iframe src="https://www.shmatastores.com/" title="Shmata Home Page"> </iframe>
+				<p> 06/26/22 Some interesting finds for only $15 at the Jane & Finch location </p>
+			</div>
+		</div>
+
+		<!-- Link jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Link jQuery UI library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="e4.js"></script>
+	</body>
+</html>
