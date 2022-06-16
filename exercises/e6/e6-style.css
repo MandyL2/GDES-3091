@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.ui-colour {
+	width: 88px;
+	height: 88px;
+	border-radius: 100%;
+}
+
+.ui-colours-primary-green {
+	background-color: #318049;
+}
+
+.ui-colours-primary div {
+	display: inline-block;
+	margin-right: 15px;
+}
