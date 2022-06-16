@@ -1,0 +1,107 @@
+h1 {
+	text-align: center;
+}
+
+h6 {
+	text-align: right;
+	margin: 0;
+}
+
+button {
+	padding: 10px;
+	background-color: cadetblue;
+	border: none;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+	height: 95%;
+}
+
+@keyframes flipForwardLeft {
+	0% {
+	}
+	50% {
+		display: inline-block;
+	}
+	100% {
+		transform: translateX(-30%) rotateY(180deg);
+		/* transition: 2s ease; */
+	}
+}
+
+@keyframes flipForwardRight {
+	0% {
+	}
+	50% {
+		display: inline-block;
+	}
+	100% {
+		transform: translateX(-32%);
+	}
+}
+
+.grid {
+	display: grid;
+	width: 60%;
+	grid-template-columns: repeat(2, 50%);
+	margin: auto;
+}
+
+.page {
+	background-color: aliceblue;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	padding: 10px;
+}
+
+.cover {
+	/* width: 30%; */
+	width: 100%;
+	height: 90vh;
+	margin: auto;
+	background-color: brown;
+	overflow: hidden;
+}
+
+/* #book:hover {
+	transform: translateX(-400px) rotateY(180deg);
+	transition: 2s ease;
+} */
+
+#front,
+#backCover {
+	width: 30%;
+}
+
+#title {
+	background-color: chocolate;
+	width: fit-content;
+	height: 15%;
+	margin: auto;
+	margin-top: 15%;
+	padding: 10px;
+}
+
+#rr4 {
+	overflow: scroll;
+}
+
+#back {
+	float: left;
+	margin-left: 20%;
+}
+
+#next {
+	float: right;
+	margin-right: 20%;
+}
+
+#contents,
+#r1r2,
+#r3r4,
+#backCover {
+	display: none;
+}

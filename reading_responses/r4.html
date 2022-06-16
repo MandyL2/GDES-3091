@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="r4-style.css" />
+		<title> Reading 4 </title>
+	</head>
+	<body>
+		<div class="book">
+			<div class="cover" id="front">
+				<div id="title">
+					<h1> Website as a Book </h1>
+				</div>
+			</div>
+			<div class="grid" id="contents">
+				<div class="cover"></div>
+				<div class="cover">
+					<br />
+					<div class="page">
+						<h1> Contents </h1>
+						<ul>
+							<li> <a> Reading Response 1 </a> ...................................1 </li>
+							<li> <a> Reading Response 2 </a> ...................................2 </li>
+							<li> <a> Reading Response 3 </a> ...................................3 </li>
+							<li>
+								<a href="javascript:void(0);" onclick="skip()"> Reading Response 4 </a>
+								...................................4
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid" id="r1r2">
+				<div class="cover">
+					<br />
+					<div class="page">
+						<iframe src="r1.html"> </iframe>
+						<h6> 1 </h6>
+					</div>
+				</div>
+				<div class="cover">
+					<br />
+					<div class="page">
+						<iframe src="r2.html"> </iframe>
+						<h6> 2 </h6>
+					</div>
+				</div>
+			</div>
+			<div class="grid" id="r3r4">
+				<div class="cover">
+					<br />
+					<div class="page">
+						<iframe src="r3.html"> </iframe>
+						<h6> 3 </h6>
+					</div>
+				</div>
+				<div class="cover">
+					<br />
+					<div class="page" id="rr4">
+						<h1>
+							Why does Laurel Schwulst advocate for individual websites over social media? Do you agree
+							with her? Please explain your answer.
+						</h1>
+						<p>
+							Schwulst points out that social media prioritizes advertising over their users’ needs, and
+							the intimidating pressure in creating a website in this newer era of the web. “No one is
+							looking out for you… but you.” Individual websites are a place for users to clearly show
+							who they are. Beyond that, they have the potential for all kinds of intentions, and don’t
+							have to be limited to one website. Schwulst’s favourite aspect of individual websites is
+							the duality of them, of being both creator and architect, leading to endless possibilities.
+							She advocates for individual websites because they are essential to guiding the future of
+							the web. Having the input of individuals gives the web a wider variety of works. It can be
+							a mutually beneficial loop of creativity, especially for artists. I agree with Schwulst.
+							Social media is a place to show people who you are, share your interests/works, or connect
+							with each other, but it’s all within a specific format that is uniform throughout each
+							user. Tumblr is a good example of/start to the idea of individual websites. It allows
+							people to create blogs of their own and even allows for custom themes, but again it still
+							has limitations that connect the blogs as part of Tumblr. Individual websites would be a
+							step further from this, and I think it would be more fun and unique, allowing a person to
+							fully express themself, and is a good opportunity to learn how to code.
+						</p>
+						<h1>
+							In this article, Schwulst outlines several metaphors defining the behaviour of websites.
+							Write a paragraph describing your own metaphor for a website.
+						</h1>
+						<p>
+							Just as a book is a collection of pages about a central theme/plot, websites are the same.
+							These pages are all bound up neatly within its titled cover or domain name. Lost your page?
+							Check back with the table of contents, with sections labelled and numbered for easy
+							navigation. The book could be part of a larger series in the library that is the web,
+							specializing in a certain type of information. It could be an educational book, perhaps an
+							encyclopedia. Or it could just be a fun book to pass the time. You can bookmark your
+							favourite pages and come back to it as often as you’d like to experience over and over.
+							Anyone can write a book of their own, creating their world however they imagine it. The
+							book might go through tons of revision as it gradually comes together. The process is just
+							as important as the end product.
+						</p>
+						<h6> 4 </h6>
+					</div>
+				</div>
+			</div>
+			<div class="cover" id="backCover"></div>
+		</div>
+		<button id="back" onclick="goBack()"> Previous Page </button>
+		<button id="next" onclick="goForward()"> Next Page </button>
+		<script src="r4.js"></script>
+	</body>
+</html>
