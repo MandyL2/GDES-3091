@@ -1,19 +1,273 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Share+Tech+Mono&family=Turret+Road:wght@500&display=swap");
+
+/* Override default browser spacing */
 * {
 	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
 }
-.ui-colour {
+
+/* Defining a 12 column grid system 
+ Try creating the missing column classes to complete the column system */
+.grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 48px;
+	margin-bottom: 120px;
+}
+
+/* Series of column classes to tell HTML element how many columns to span */
+
+.col-1 {
+	grid-column: span 1;
+}
+
+.col-2 {
+	grid-column: span 2;
+}
+
+.col-3 {
+	grid-column: span 3;
+}
+
+.col-4 {
+	grid-column: span 4;
+}
+
+.col-5 {
+	grid-column: span 5;
+}
+
+.col-6 {
+	grid-column: span 6;
+}
+
+.col-7 {
+	grid-column: span 7;
+}
+
+.col-8 {
+	grid-column: span 8;
+}
+
+.col-9 {
+	grid-column: span 9;
+}
+
+.col-10 {
+	grid-column: span 10;
+}
+
+.col-11 {
+	grid-column: span 11;
+}
+
+.col-12 {
+	grid-column: span 12;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 100px;
+}
+
+/* Add spacing below header tags */
+h1,
+h2,
+h3 {
+	margin-bottom: 24px;
+}
+
+/* animation for hover state */
+@keyframes gradient-anim {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Style div as circle */
+.ui-color {
 	width: 88px;
 	height: 88px;
-	border-radius: 100%;
+	border-radius: 50%;
 }
 
-.ui-colours-primary-green {
-	background-color: #318049;
+/* Position hexcode centre to circle color */
+.ui-colors-hexcode {
+	text-align: center;
+	margin-top: 12px;
 }
 
-.ui-colours-primary div {
+/* Display colors next to one another and add spacing to the right side */
+.ui-colors-primary div,
+.ui-colors-secondary div {
 	display: inline-block;
-	margin-right: 15px;
+	padding-right: 15px;
+}
+
+/* Remove padding on last color element */
+.ui-colors-primary div:last-child,
+.ui-colors-secondary div:last-child {
+	padding-right: 0;
+}
+
+/* UI Colors */
+.ui-colors-primary-gradient {
+	margin-left: 20%;
+	background-image: linear-gradient(#31418c, #1c2559);
+}
+
+.ui-colors-primary-light-purple {
+	background-color: #31418c;
+}
+
+.ui-colors-primary-peach {
+	background-color: #ffdcb3;
+}
+
+.ui-colors-primary-purple {
+	background-color: #8a96db;
+}
+
+.ui-colors-primary-dark-blue {
+	background-color: #32517f;
+}
+
+.ui-colors-secondary-pink {
+	background-color: #f2bac9;
+}
+
+.ui-colors-secondary-green {
+	background-color: #9abe77;
+}
+
+.ui-colors-secondary-dark-purple {
+	background-color: #1d1346;
+}
+
+.ui-colors-secondary-light-blue {
+	margin-left: 18%;
+	background-image: linear-gradient(#7298c7, #e4ce97);
+}
+
+.ui-colors-secondary-yellow {
+	background-color: #e4ce97;
+}
+
+/* UI header styling */
+.headers {
+	color: #1d1346;
+}
+
+.headers h1 {
+	font-family: liquorstore-3d, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#heading-med {
+	font-family: "Share Tech Mono", monospace;
+}
+
+.headers h3 {
+	font-family: "Turret Road", cursive;
+}
+
+/* UI body copy text styling */
+.body-copy p {
+	font-family: "Roboto Condensed", sans-serif;
+	color: #1d1346;
+}
+
+/* UI text links styling */
+.text-links a {
+	font-family: "Turret Road", cursive;
+	color: #8a96db;
+}
+
+.text-links a:nth-child(4) {
+	color: #f2bac9;
+}
+
+/* UI button styling */
+.button {
+	height: 50px;
+	width: 120px;
+	background-color: #ffdcb3;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	padding: 2px;
+	margin-right: 5%;
+}
+
+.button p {
+	font-family: "Turret Road", cursive;
+}
+
+.inactive {
+	box-shadow: 3px 3px #e4ce97;
+}
+
+.active {
+	background-image: linear-gradient(#7298c7, #e4ce97);
+	box-shadow: 5px 5px transparent;
+}
+
+.hover-state:hover {
+	background: linear-gradient(90deg, #ffdcb3, #f4c796, #ffdcb3, #f4c796);
+	background-size: 400% 400%;
+	animation: 5s gradient-anim ease infinite;
+}
+
+/* UI inputs styling */
+.inputs input {
+	padding: 10px;
+	border-radius: 3px;
+	font-family: "Roboto Condensed", sans-serif;
+	width: 24%;
+}
+
+#inactive,
+#inactive:focus {
+	border: 2px solid #1d1346;
+	outline: none;
+}
+
+#active {
+	color: #ffdcb3;
+	background-color: #8a96db;
+	outline: none;
+	border: 2px solid #31418c;
+}
+
+#error {
+	border: 2px solid #f2bac9;
+}
+
+#error:focus {
+	border: 2px solid #f087a3;
+	outline: none;
+}
+
+#success {
+	border: 2px solid #9abe77;
+}
+
+#success:focus {
+	outline: none;
+	border: 2px solid #7ca84f;
+}
+
+@media (max-width: 1131px) {
+	.button {
+		margin-bottom: 10px;
+	}
 }

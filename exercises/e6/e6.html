@@ -1,43 +1,120 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="e6-style.css" />
-		<title> UI STyle Guide </title>
-	</head>
+<html lang="en">
+	<header>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>UI Style Guide</title>
+		<link rel="stylesheet" href="e6-layout.css" />
+		<link rel="stylesheet" href="e6-style.css" />
+		<!-- import adobe font -->
+		<link rel="stylesheet" href="https://use.typekit.net/nxv3kka.css" />
+	</header>
+
 	<body>
-		<div class="ui-style-guide">
-			<div class="ui-colours">
-				<h2> Colours </h2>
-				<div class="ui-colours-primary">
-					<h3> Primary </h3>
-					<div class="ui-colours-primary-1">
-						<div class="ui-colours-primary-green ui-colour"></div>
-						<p class="ui-colours-hexcode"> colour # </p>
+		<h1>UI Style Guide</h1>
+		<div class="ui-style-guide grid">
+			<div class="ui-colors col-12">
+				<h2>Colours</h2>
+				<div class="grid">
+					<!-- div container for primary colours -->
+					<div class="ui-colors-primary col-6">
+						<h3>Primary</h3>
+						<div class="ui-colors-primary-1">
+							<div class="ui-colors-primary-peach ui-color"></div>
+							<p class="ui-colors-hexcode">#ffdcb3</p>
+						</div>
+						<div class="ui-colors-primary-2">
+							<div class="ui-colors-primary-purple ui-color"></div>
+							<p class="ui-colors-hexcode">#8a96db</p>
+						</div>
+						<div class="ui-colors-primary-3">
+							<div class="ui-colors-primary-dark-blue ui-color"></div>
+							<p class="ui-colors-hexcode">#32517f</p>
+						</div>
+						<div class="ui-colors-primary-4">
+							<div class="ui-colors-primary-gradient ui-color"></div>
+							<p class="ui-colors-hexcode">#31418c & #1c2559</p>
+						</div>
+					</div>
+
+					<!-- div container for secondary colours -->
+					<div class="ui-colors-secondary col-6">
+						<h3>Secondary</h3>
+						<div class="ui-colors-primary-1">
+							<div class="ui-colors-secondary-green ui-color"></div>
+							<p class="ui-colors-hexcode">#9abe77</p>
+						</div>
+						<div class="ui-colors-primary-2">
+							<div class="ui-colors-secondary-dark-purple ui-color"></div>
+							<p class="ui-colors-hexcode">#1d1346</p>
+						</div>
+						<div class="ui-colors-primary-3">
+							<div class="ui-colors-secondary-pink ui-color"></div>
+							<p class="ui-colors-hexcode">#f2bac9</p>
+						</div>
+						<div class="ui-colors-primary-4">
+							<div class="ui-colors-secondary-light-blue ui-color"></div>
+							<p class="ui-colors-hexcode">#7298c7 & #e4ce97</p>
+						</div>
+					</div>
+
+					<!-- div container for headers -->
+					<div class="headers col-6">
+						<hr />
+						<h2> Headers Text </h2>
+						<h1> Heading Large </h1>
+						<h2 id="heading-med"> Heading Medium </h2>
+						<h3> Heading Small </h3>
+					</div>
+
+					<!-- div container for body copy text -->
+					<div class="body-copy col-6">
+						<hr />
+						<h2> Body Copy Text </h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor, arcu nec tristique
+							rutrum, justo massa cursus lacus, at ultrices neque felis faucibus nisl. Integer hendrerit
+							quam et hendrerit fringilla. Nam malesuada pharetra vehicula. Praesent tempor condimentum
+							nulla faucibus porta. Vestibulum a congue justo. Proin quis ex quis neque sollicitudin
+							molestie. Sed condimentum lacinia fermentum. Aenean scelerisque vitae neque ut aliquet.
+							Vestibulum finibus mauris vel mauris ultrices rhoncus. In non mauris ac lacus finibus
+							ultrices cursus eget quam. Proin ac turpis neque.
+						</p>
+					</div>
+
+					<!-- div container for text links -->
+					<div class="text-links col-6">
+						<hr />
+						<h2> Text Links </h2>
+						<a href=""> <h3>Link</h3> </a>
+						<a href=""> <h3> Visited Link</h3> </a>
+					</div>
+
+					<!-- div container for button states -->
+					<div class="buttons col-6">
+						<hr />
+						<h2> Buttons </h2>
+						<div class="inactive button">
+							<p>Inactive</p>
+						</div>
+						<div class="active button">
+							<p>Active </p>
+						</div>
+						<div class="hover-state inactive button"> <p> Hover </p> </div>
+					</div>
+
+					<!-- div container for input states -->
+					<div class="inputs col-12">
+						<hr />
+						<h2> Inputs </h2>
+						<input type="text" placeholder="Inactive" id="inactive" />
+						<input type="text" placeholder="active" id="active" />
+						<input type="text" placeholder="error" id="error" />
+						<input type="text" placeholder="success" id="success" />
 					</div>
 				</div>
 			</div>
-
-			<div class="ui-font-stack">
-				<div class="ui-font-stack-1">
-					<p> font </p>
-				</div>
-				<div class="ui-font-stack-2">
-					<p> font </p>
-				</div>
-			</div>
-
-			<div class="ui-headers"></div>
-
-			<div class="ui-body-copy"></div>
-
-			<div class="ui-text-links"></div>
-
-			<div class="ui-form">
-				<div class="ui-form-buttons"></div>
-				<div class="ui-form-inputs"></div>
-				<div class="ui-form-short"></div>
-			</div>
 		</div>
-		<script src=""></script>
 	</body>
 </html>
