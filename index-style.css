@@ -1,14 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Share+Tech+Mono&family=Turret+Road:wght@500&display=swap");
+
+* {
+	margin: auto;
+}
+
 body {
-	background-color: rgb(114, 148, 177);
+	background-image: linear-gradient(#31418c, #1c2559);
+	margin: auto;
 }
 h1 {
 	font-size: 120px;
-	color: burlywood;
+	color: #1d1346;
 	line-height: 100px;
+	font-family: liquorstore-3d, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-div {
-	width: 250px;
-	height: 250px;
-	border: 4px solid black;
+h3 {
+	font-family: "Turret Road", cursive;
+}
+
+span {
+	display: inline-block;
+}
+
+.window-icons {
+	display: inline;
+	text-decoration: none;
+	float: right;
+	margin: 1% 2.3% 0 0;
+}
+
+ul li {
+	display: inline-block;
+}
+.body-grid {
+	display: grid;
+	grid-template-columns: 60% 20% 20%;
+	grid-template-rows: 15% 15% 70%;
+	width: 100vw;
+	height: 100vh;
+}
+
+figcaption {
+	text-align: center;
+	font-family: "Share Tech Mono", monospace;
+	margin: 5px 0 15px 0;
+}
+
+#grid-pattern {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("/images/grid-pattern.png");
+	background-size: 80px;
+}
+
+#home {
+	display: inline-block;
+	margin: 1% 0 0 2.3%;
+}
+
+.minimize,
+.windowed,
+.close {
+	width: 40px;
+	height: 20px;
+	border: 2px solid #1d1346;
+}
+
+.minimize {
+	background: #32517f url("/images/minimize-icon.png") no-repeat center;
+	background-size: 15px;
+}
+
+.windowed {
+	background: #32517f url("/images/windowed-icon.png") no-repeat center;
+	background-size: 15px;
+}
+
+.close {
+	background: #32517f url("/images/close-icon.png") no-repeat center;
+	background-size: 15px;
+}
+
+#welcome-outer {
+	background-color: #8a96db;
+	border: 2px solid #1d1346;
+	width: 90%;
+	height: 90%;
+	grid-row-end: span 3;
+}
+
+#welcome-inner {
+	background-color: white;
+	width: 95%;
+	height: 90%;
+	margin-top: 1%;
+	text-align: center;
+	border: 2px solid #1d1346;
+	/* grid-row-end: span 3; */
+}
+
+#welcome-inner h1 {
+	margin-top: 25%;
+}
+
+.folder {
+	width: 180px;
+	height: 150px;
+	background: url("/images/closed-folder-icon.png") no-repeat center;
+	background-size: 100px;
+}
+
+.folder-dir {
+	grid-row-start: 2;
+	margin-top: 25%;
+}
+
+.folder-dir li a {
+	color: white;
+}
+
+.folder:hover {
+	background-image: url("/images/open-folder-icon.png");
 }
