@@ -16,7 +16,8 @@ ul li {
 .body-grid {
 	display: grid;
 	grid-template-rows: 75vh 25vh;
-	width: 50vw;
+	grid-template-columns: 25% 75%;
+	width: 85vw;
 	height: 100vh;
 	overflow: hidden;
 }
@@ -49,6 +50,7 @@ ul li {
 .nav-bar {
 	display: inline-block;
 	margin-top: 0;
+	grid-column-start: 2;
 }
 
 .nav-bar ul li {
@@ -63,4 +65,14 @@ ul li {
 	/* width: 80px; */
 	height: 50px;
 	background-size: 50px;
+}
+
+#references li {
+	display: block;
+	margin-top: 10px;
+}
+
+#references li a {
+	color: #8a96db;
+	font-family: "Turret Road", cursive;
 }

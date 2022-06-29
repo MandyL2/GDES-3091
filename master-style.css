@@ -40,10 +40,6 @@ span {
 	display: inline-block;
 }
 
-a:visited {
-	color: #f2bac9;
-}
-
 .body-grid {
 	display: grid;
 	width: 100vw;
