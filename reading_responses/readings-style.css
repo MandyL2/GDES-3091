@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Share+Tech+Mono&family=Turret+Road:wght@500&display=swap");
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+	font-size: 120px;
+	color: #1d1346;
+	line-height: 100px;
+	font-family: "liquorstore-3d", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2 {
+	font-family: "Share Tech Mono", monospace;
+}
+
+h3 {
+	font-family: "Turret Road", cursive;
+}
