@@ -110,7 +110,7 @@ figcaption {
 .folder {
 	width: 180px;
 	height: 150px;
-	background: url("images/closed-folder-icon.png") no-repeat center;
+	background: url("./images/closed-folder-icon.png") no-repeat center;
 	background-size: 100px;
 }
 
@@ -124,5 +124,5 @@ figcaption {
 }
 
 .folder:hover {
-	background-image: url("images/open-folder-icon.png");
+	background-image: url("./images/open-folder-icon.png");
 }

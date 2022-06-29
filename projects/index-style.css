@@ -62,6 +62,5 @@ ul li {
 .folder {
 	/* width: 80px; */
 	height: 50px;
-	background: url("/images/closed-folder-icon.png") no-repeat center;
 	background-size: 50px;
 }
