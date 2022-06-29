@@ -40,6 +40,10 @@ span {
 	display: inline-block;
 }
 
+a:visited {
+	color: #f2bac9;
+}
+
 .body-grid {
 	display: grid;
 	width: 100vw;
@@ -118,4 +122,12 @@ span {
 
 .folder:hover {
 	background-image: url("images/open-folder-icon.png");
+}
+
+.nav-bar ul li {
+	display: inline-block;
+}
+
+.nav-bar li a {
+	color: white;
 }

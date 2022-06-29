@@ -36,10 +36,6 @@ ul li {
 	display: inline-block;
 }
 
-a:visited {
-	color: #f2bac9;
-}
-
 .body-grid {
 	display: grid;
 	grid-template-columns: 60% 20% 20%;
@@ -129,8 +125,4 @@ figcaption {
 
 .folder:hover {
 	background-image: url("images/open-folder-icon.png");
-}
-
-.nav-bar li a {
-	color: white;
 }
