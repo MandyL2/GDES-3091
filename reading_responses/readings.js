@@ -1,4 +1,4 @@
-let readingWindows = ["reading1", "reading2", "reading3", "reading4"];
+let readingWindows = ["reading1", "reading2", "reading3", "reading4", "reading5"];
 let exerciseWindows = ["exercise1", "exercise2", "exercise3", "exercise4", "exercise5", "exercise6"];
 let margin = 20;
 function openWindow(el) {

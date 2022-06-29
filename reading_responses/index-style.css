@@ -8,6 +8,15 @@ iframe {
 	border: none;
 }
 
+ul li a {
+	color: #8a96db;
+}
+
+ul li {
+	display: block;
+	text-decoration: none;
+}
+
 .body-grid {
 	display: grid;
 	grid-template-columns: 30% 70%;
@@ -18,12 +27,10 @@ iframe {
 
 .nav-bar {
 	grid-row-start: 2;
-	width: 100%;
 	margin-top: 0;
 }
 
 .nav-bar ul li {
-	display: inline-block;
 	margin-right: 10px;
 }
 
@@ -53,7 +60,7 @@ iframe {
 }
 
 .window-outer {
-	width: 90%;
+	width: 100%;
 	padding: 2%;
 }
 
@@ -70,10 +77,6 @@ iframe {
 
 #reading-list li:hover {
 	background-color: #ffdcb3;
-}
-
-#reading-list li a {
-	color: #8a96db;
 }
 
 .folder {
@@ -95,6 +98,7 @@ iframe {
 
 #reading2,
 #reading3,
-#reading4 {
+#reading4,
+#reading5 {
 	display: none;
 }
