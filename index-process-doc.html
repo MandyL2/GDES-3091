@@ -1,117 +1,177 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
-  	<meta charset="utf-8">
-    <title>Process Page Template</title>
-    <style>
-        /* Move all CSS to a stylesheet */
-        * { /* Remove default browser spacing */
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            margin: 100px; /* Add spacing around the entire page */ 
-            font-size: 12px; /* Setting baseline font size */ 
-        }
-
-        /* Start of text sizes */
-        h1 {
-            font-size: 4em;
-        }
-        h2 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 2em;
-            line-height: 1.5em;
-        }
-        figcaption {
-            font-size: 1.25em;
-        }
-        /* End of text sizes */
-
-        /* Start of spacing and layout */
-        h2, p, figure, figcaption {
-            margin-bottom: 40px;
-        }
-        img {
-            margin-bottom: 10px;
-        }
-        .process-template {
-            width: 40%; /* Set the width of the template to 60% of the viewport. */
-            margin: auto; /* Center align the template by adding auto margins to the left and right */
-        }
-        .title {
-            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
-        }
-
-        .section {
-            margin-bottom: 100px;
-        }
-        /* End of spacing and layout */
-
-        /* Adding media queries for page to adapts to tablet and mobile devices */
-        @media (max-width: 991px) {
-            .process-template {
-                width: 60%;
-            }
-        }
-
-        @media (max-width:767px) {
-            body {
-                margin: 40px;
-                font-size: 10px;
-            }
-            .process-template {
-                width: 100%;
-            }
-        }
-
-    </style>
-  </head>
-  <body>
-    <div class="process-template">
-        <!-- Start of title -->
-        <div class="title">
-            <h1>Page Title</h1>
-        </div>
-        <!-- End of title -->
-        <!-- Start of content -->
-        <div class="content">
-            <!-- Start of a section -->
-            <div class="section">
-                <h2>Section Title</h2>
-                <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
-                </p>
-                <!-- Start of a section -->
-                <!-- Start of image with caption -->
-                <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
-                </figure>
-                <!-- End of image with caption -->
-            </div>
-            <!-- End of a section -->
-            <!-- Start of a new section -->
-            <div class="section">
-                <h2>Another Section Title</h2>
-                <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
-                </p>
-                <!-- Start of a section -->
-                <!-- Start of image with caption -->
-                <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
-                </figure>
-                <!-- End of image with caption -->
-            </div>
-            <!-- End of a new section -->
-        </div>
-        <!-- End of content -->
-    </div>
-  </body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-zoom:1.0" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="process-style.css" />
+		<title>Process Documentation</title>
+	</head>
+	<body>
+		<div class="process-template">
+			<!-- Start of title -->
+			<div class="title">
+				<h1>Process Documentation</h1>
+			</div>
+			<!-- End of title -->
+			<!-- Start of content -->
+			<div class="content">
+				<!-- Start of a section -->
+				<div class="section">
+					<h2> Brainstorming </h2>
+					<p>
+						I originally had 3 ideas for the theme of my INDEX. The first was a kind of retro, early
+						2000s computer aesthetic. The second went in the opposite direction with an analogue feel of
+						a newspaper/scrapbook. The third theme was inspired by 80s Hong Kong cinema with bright and
+						bold neon signs.
+					</p>
+					<!-- Start of a section -->
+					<!-- Start of image with caption -->
+					<figure>
+						<img
+							src="images/idea1-inspo.png"
+							alt="This text should describe the image"
+							class="brainstorm"
+						/>
+						<img src="images/idea1.png" alt="This text should describe the image" class="brainstorm" />
+						<img src="images/idea1.2.png" alt="This text should describe the image" class="brainstorm" />
+						<figcaption> Theme #1 </figcaption>
+					</figure>
+					<!-- End of image with caption -->
+					<!-- Start of image with caption -->
+					<figure>
+						<img
+							src="images/idea2-inspo.png"
+							alt="This text should describe the image"
+							class="brainstorm"
+						/>
+						<img src="images/idea2.png" alt="This text should describe the image" class="brainstorm" />
+						<img src="images/idea2.2.png" alt="This text should describe the image" class="brainstorm" />
+						<figcaption> Theme #2 </figcaption>
+					</figure>
+					<!-- End of image with caption -->
+					<!-- Start of image with caption -->
+					<figure>
+						<img
+							src="images/idea3-inspo.png"
+							alt="This text should describe the image"
+							class="brainstorm"
+						/>
+						<img src="images/idea3.png" alt="This text should describe the image" class="brainstorm" />
+						<figcaption> Theme #3 </figcaption>
+					</figure>
+					<!-- End of image with caption -->
+					<p> I decided to go with Theme #1 </p>
+				</div>
+				<!-- End of a section -->
+				<!-- Start of a new section -->
+				<div class="section">
+					<h2> Process </h2>
+					<!-- Start of a section -->
+					<!-- Start of image with caption -->
+					<figure>
+						<img src="images/home_draft.png" alt="This text should describe the image" />
+						<img src="images/home_final.png" alt="This text should describe the image" />
+						<figcaption> Draft (top) vs Final (bottom) </figcaption>
+					</figure>
+					<!-- End of image with caption -->
+					<p>
+						I tried to make the home page look like a desktop, with little folders instead of a
+						navigation bar. I'm happy I was able to replicate the original sketch so closely, although I
+						wasn't able to add the glitchy bars overlapping the windows.
+					</p>
+					<figure>
+						<img
+							src="images/closed-folder-icon.png"
+							alt="This text should describe the image"
+							class="brainstorm"
+						/>
+						<img
+							src="images/open-folder-icon.png"
+							alt="This text should describe the image"
+							class="brainstorm"
+						/>
+						<figcaption> Hand drawn folders for the hover animation! </figcaption>
+					</figure>
+					<figure>
+						<img src="images/readings1.png" alt="This text should describe the image" />
+					</figure>
+					<p>
+						Here I was just figuring out the layout of this page. Sticking with the computer theme, I
+						used iframes to my advantage to create windows of each reading. The window would pop up once
+						the user clicked on the reading in the navigation list. Originally I was going to have them
+						pop up below each other and have the user scroll down to see them all.
+					</p>
+					<figure>
+						<img src="images/readings2.png" alt="This text should describe the image" />
+						<img src="images/readings3.png" alt="This text should describe the image" />
+						<img src="images/readings4.png" alt="This text should describe the image" />
+						<img
+							src="https://www.tynker.com/projects/screenshot/5c0c5dc8fa5d5874a27c5edc/windows-xp-error-simulator.png"
+						/>
+					</figure>
+					<p>
+						I decided to keep everything within view and set the overflow to hidden. Following the
+						references I had, I made them overlap once shown, similar to all those error window pop-ups.
+						I was able to implement jQuery to allow the user to rearrange the windows as well. The
+						X-button in the corner of the windows are functional as well, hiding the window from view
+						when clicked. The user can reopen the window by selecting it in the navigation list on the
+						side.
+					</p>
+					<figure>
+						<img src="images/readings5.png" alt="This text should describe the image" />
+					</figure>
+					<p>
+						Final styling. I added a window for any references I used when creating this page and had
+						that theme throughout the rest of the website. I also edited the readings themselves to fit
+						more with the website's aesthetic and added a link to each reading to give context to my
+						answers. I made the text hierarchy clear in the readings: the reading title/link is h2, the
+						questions are h3, and the answers are body copy text. I kept the little navigation folders in
+						the bottom left like a computer taskbar.
+					</p>
+					<figure>
+						<img src="images/projects1.png" alt="This text should describe the image" />
+						<img src="images/projects2.png" alt="This text should describe the image" />
+						<img src="images/projects3.png" alt="This text should describe the image" />
+						<figcaption> Figuring out spacing </figcaption>
+						<img src="images/projects4.png" alt="This text should describe the image" />
+					</figure>
+					<p>
+						Here I also had a window to the side for all the references I used to create the 3 projects.
+						This layout was meant to look more like a file explorer, and clicking on each folder linked
+						to the working html page of each project.
+					</p>
+					<figure>
+						<img src="images/exercises1.png" alt="This text should describe the image" />
+						<img src="images/exercises2.png" alt="This text should describe the image" />
+						<img src="images/exercises3.png" alt="This text should describe the image" />
+						<img src="images/exercises4.png" alt="This text should describe the image" />
+					</figure>
+					<p>
+						At first I was stumped on how to incorporate my exercises in a way that looked consistent
+						with the website's theme, but realized I could use the layout of my Reading Responses page.
+						The first thing the user sees is the navigation list and references, and Exercise 1 because
+						it didn't need the full width of the page. Since the other exercises were designed to be a
+						whole webpage, I didn't hide the overflow and made the windows show up below. These can also
+						be rearranged and closed. Here you can see the UI Style Guide I made for my website. I ended
+						up not using some of the colours, which I think is fine because it makes the palette more
+						concise. I liked the purple theme with yellow accents. I didn't need any buttons either so
+						they were left out.
+					</p>
+				</div>
+				<!-- End of a new section -->
+				<div class="section">
+					<h2> Conclusion </h2>
+					<p>
+						Overall, I'm quite satisfied with the final look. It fits the aesthetic I was going for and
+						looks pretty consistent. I learned a lot while making this, such as using grids to create
+						nicer layouts. It made things a lot easier for me to position. I tried to make sure my code
+						was clean, consistent, and efficient as well. This project also allowed me to brush up on my
+						version control skills using the terminal.
+					</p>
+				</div>
+			</div>
+			<!-- End of content -->
+		</div>
+	</body>
 </html>
