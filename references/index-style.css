@@ -1,0 +1,18 @@
+.window-inner ul li {
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+}
+
+.window-inner ul li:hover {
+	background-color: #ffdcb3;
+}
+
+.window-inner ul li a {
+	color: #8a96db;
+}
+
+.folder {
+	height: 70px;
+	background-size: 70px;
+}
