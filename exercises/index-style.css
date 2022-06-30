@@ -91,6 +91,9 @@ ul li a {
 	display: block;
 	text-decoration: none;
 }
+#references li:hover {
+	background-color: #ffdcb3;
+}
 
 .exercise-nav {
 	width: 90%;

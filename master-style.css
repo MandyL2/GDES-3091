@@ -26,7 +26,8 @@ h2 {
 	font-family: "Share Tech Mono", monospace;
 }
 
-h3 {
+h3,
+a {
 	font-family: "Turret Road", cursive;
 }
 
@@ -110,10 +111,6 @@ span {
 	height: 150px;
 	background: url("./images/closed-folder-icon.png") no-repeat center;
 	background-size: 100px;
-}
-
-.folder-dir li a {
-	color: white;
 }
 
 .folder:hover {

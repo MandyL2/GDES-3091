@@ -67,12 +67,12 @@ ul li {
 .window-inner {
 	margin-top: 3%;
 	border: 2px solid #1d1346;
-	padding: 20px;
 }
 
 #reading-list li {
 	display: block;
 	text-decoration: none;
+	padding: 10px;
 }
 
 #reading-list li:hover {
